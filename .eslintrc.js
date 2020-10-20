@@ -5,8 +5,9 @@ module.exports = {
     'plugin:@typescript-eslint/eslint-recommended',
     'plugin:prettier/recommended',
     'prettier/@typescript-eslint',
+    'plugin:react/recommended',
   ],
-  plugins: ['@typescript-eslint'],
+  plugins: ['@typescript-eslint', 'react-hooks', 'react', 'import'],
   parser: '@typescript-eslint/parser',
   env: {
     browser: true,
@@ -22,4 +23,4 @@ module.exports = {
   rules: {
     '@typescript-eslint/no-explicit-any': 'off',
   },
-}
+};
