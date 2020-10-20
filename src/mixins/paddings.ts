@@ -1,4 +1,4 @@
-import { css } from '@emotion/core';
+import { css, SerializedStyles } from '@emotion/core';
 import { CSSProperties } from 'react';
 import { px } from '../helpers';
 
@@ -19,7 +19,7 @@ export interface PaddingsProps {
  *  ${paddings}
  * `;
  */
-export const paddings = ({ p, pt, pr, pb, pl }: PaddingsProps) => css`
+export const paddings = ({ p, pt, pr, pb, pl }: PaddingsProps): SerializedStyles => css`
   ${p && `padding: ${px(p)}`};
   ${pt && `padding-top: ${px(pt)}`};
   ${pr && `padding-right: ${px(pr)}`};

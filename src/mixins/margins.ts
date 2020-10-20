@@ -1,4 +1,4 @@
-import { css } from '@emotion/core';
+import { css, SerializedStyles } from '@emotion/core';
 import { CSSProperties } from 'react';
 import { px } from '../helpers';
 
@@ -19,7 +19,7 @@ export interface MarginsProps {
  *  ${margins}
  * `;
  */
-export const margins = ({ m, mt, mr, mb, ml }: MarginsProps) => css`
+export const margins = ({ m, mt, mr, mb, ml }: MarginsProps): SerializedStyles => css`
   ${m && `margin: ${px(m)}`};
   ${mt && `margin-top: ${px(mt)}`};
   ${mr && `margin-right: ${px(mr)}`};
