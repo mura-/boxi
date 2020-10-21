@@ -1,16 +1,20 @@
-import React from 'react';
+import React, { CSSProperties } from 'react';
 import styled from '@emotion/styled';
-import { MarginsProps } from './mixins/margins';
-import { PaddingsProps } from './mixins/paddings';
+import { MarginsProps, margins } from './mixins/margins';
+import { PaddingsProps, paddings } from './mixins/paddings';
 
-interface ElementProps {
-  backgroundColor?: React.CSSProperties['backgroundColor'];
-}
+type ElementProps = {
+  backgroundColor?: CSSProperties['backgroundColor'];
+} & MarginsProps &
+  PaddingsProps &
+  React.HTMLAttributes<HTMLElement>;
 
-type Props = ElementProps & MarginsProps & PaddingsProps;
+type Props = ElementProps;
 
 const Component = styled.div<ElementProps>`
   background-color: ${({ backgroundColor }) => backgroundColor};
+  ${margins};
+  ${paddings};
 `;
 
 const Wrapper: React.FC<Props> = ({ children, ...rest }) => {
