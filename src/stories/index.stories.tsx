@@ -4,7 +4,7 @@ import { Wrapper } from '../index';
 
 export const Component: React.FC = () => <Wrapper backgroundColor="red">Storytest</Wrapper>;
 export const ComponentWithFlex: React.FC = () => (
-  <Wrapper style={{ display: 'flex' }} justifyContent="space-between">
+  <Wrapper display="flex" justifyContent="space-between">
     <Wrapper>hoge</Wrapper>
     <Wrapper>hoge</Wrapper>
   </Wrapper>
