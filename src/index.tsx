@@ -4,6 +4,7 @@ import { MarginsProps, margins } from './mixins/margins';
 import { PaddingsProps, paddings } from './mixins/paddings';
 import { FlexboxProps, flexbox } from './mixins/flexbox';
 import { DisplayProps, display } from './mixins/display';
+import { SizingProps, sizing } from './mixins/sizing';
 
 type ElementProps = {
   backgroundColor?: CSSProperties['backgroundColor'];
@@ -11,6 +12,7 @@ type ElementProps = {
   PaddingsProps &
   FlexboxProps &
   DisplayProps &
+  SizingProps &
   React.HTMLAttributes<HTMLElement>;
 
 type Props = ElementProps;
@@ -21,6 +23,7 @@ const Component = styled.div<ElementProps>`
   ${paddings};
   ${flexbox};
   ${display};
+  ${sizing};
 `;
 
 const Wrapper: React.FC<Props> = ({ children, ...rest }) => {

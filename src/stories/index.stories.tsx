@@ -10,6 +10,13 @@ export const ComponentWithFlex: React.FC = () => (
   </Wrapper>
 );
 
+export const ComponentWithSizing: React.FC = () => (
+  <Wrapper display="flex" alignItems="center" justifyContent="space-between" height="300px">
+    <Wrapper>hoge</Wrapper>
+    <Wrapper>hoge</Wrapper>
+  </Wrapper>
+);
+
 export default {
   title: 'Index',
 } as Meta;
