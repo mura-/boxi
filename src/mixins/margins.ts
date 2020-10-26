@@ -8,21 +8,34 @@ export interface MarginsProps {
   mr?: CSSProperties['marginRight'];
   mb?: CSSProperties['marginBottom'];
   ml?: CSSProperties['marginLeft'];
+  margin?: CSSProperties['margin'];
+  marginTop?: CSSProperties['marginTop'];
+  marginRight?: CSSProperties['marginRight'];
+  marginBottom?: CSSProperties['marginBottom'];
+  marginLeft?: CSSProperties['marginLeft'];
 }
 
-/**
- * Converts shorthand margin props to CSS declarations
- *
- * @example
- * // <Div m={10} />
- * const Div = styled.div<MarginsProps>`
- *  ${margins}
- * `;
- */
-export const margins = ({ m, mt, mr, mb, ml }: MarginsProps): SerializedStyles => css`
+export const margins = ({
+  m,
+  mt,
+  mr,
+  mb,
+  ml,
+
+  margin,
+  marginTop,
+  marginRight,
+  marginBottom,
+  marginLeft,
+}: MarginsProps): SerializedStyles => css`
   ${m && `margin: ${px(m)}`};
   ${mt && `margin-top: ${px(mt)}`};
   ${mr && `margin-right: ${px(mr)}`};
   ${mb && `margin-bottom: ${px(mb)}`};
   ${ml && `margin-left: ${px(ml)}`};
+  ${margin && `margin: ${px(margin)}`};
+  ${marginTop && `margin-top: ${px(marginTop)}`};
+  ${marginRight && `margin-right: ${px(marginRight)}`};
+  ${marginBottom && `margin-bottom: ${px(marginBottom)}`};
+  ${marginLeft && `margin-left: ${px(marginLeft)}`};
 `;

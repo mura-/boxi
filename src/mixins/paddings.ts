@@ -8,21 +8,33 @@ export interface PaddingsProps {
   pr?: CSSProperties['paddingRight'];
   pb?: CSSProperties['paddingBottom'];
   pl?: CSSProperties['paddingLeft'];
+  padding?: CSSProperties['padding'];
+  paddingTop?: CSSProperties['paddingTop'];
+  paddingRight?: CSSProperties['paddingRight'];
+  paddingBottom?: CSSProperties['paddingBottom'];
+  paddingLeft?: CSSProperties['paddingLeft'];
 }
 
-/**
- * Converts shorthand margin props to CSS declarations
- *
- * @example
- * // <Div p={10} />
- * const Div = styled.div<PaddingsProps>`
- *  ${paddings}
- * `;
- */
-export const paddings = ({ p, pt, pr, pb, pl }: PaddingsProps): SerializedStyles => css`
+export const paddings = ({
+  p,
+  pt,
+  pr,
+  pb,
+  pl,
+  padding,
+  paddingTop,
+  paddingRight,
+  paddingBottom,
+  paddingLeft,
+}: PaddingsProps): SerializedStyles => css`
   ${p && `padding: ${px(p)}`};
   ${pt && `padding-top: ${px(pt)}`};
   ${pr && `padding-right: ${px(pr)}`};
   ${pb && `padding-bottom: ${px(pb)}`};
   ${pl && `padding-left: ${px(pl)}`};
+  ${padding && `padding: ${px(padding)}`};
+  ${paddingTop && `padding-top: ${px(paddingTop)}`};
+  ${paddingRight && `padding-right: ${px(paddingRight)}`};
+  ${paddingBottom && `padding-bottom: ${px(paddingBottom)}`};
+  ${paddingLeft && `padding-left: ${px(paddingLeft)}`};
 `;

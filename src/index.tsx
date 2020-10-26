@@ -14,10 +14,9 @@ type ElementProps = {
   FlexboxProps &
   DisplayProps &
   SizingProps &
-  PositionsProps &
-  React.HTMLAttributes<HTMLElement>;
+  PositionsProps;
 
-type Props = ElementProps;
+type Props = ElementProps & React.HTMLAttributes<HTMLElement>;
 
 const Component = styled.div<ElementProps>`
   background-color: ${({ backgroundColor }) => backgroundColor};
