@@ -9,6 +9,7 @@ import { PositionsProps, positions } from './mixins/positions';
 import { TypographyProps, typography } from './mixins/typography';
 import { PaletteProps, palette } from './mixins/palette';
 import { BordersProps, borders } from './mixins/borders';
+import { ShadowsProps, shadows } from './mixins/shadows';
 
 type ElementProps = MarginsProps &
   PaddingsProps &
@@ -18,6 +19,7 @@ type ElementProps = MarginsProps &
   PositionsProps &
   PaletteProps &
   TypographyProps &
+  ShadowsProps &
   BordersProps;
 
 type Props = ElementProps & React.HTMLAttributes<HTMLElement>;
@@ -28,23 +30,11 @@ const Component = styled.div<ElementProps>`
   ${flexbox};
   ${palette};
   ${positions};
+  ${shadows};
   ${sizing};
   ${margins};
   ${paddings};
   ${typography};
-
-  /* TODO */
-  /*
-  borders: OK
-  display: OK
-  flexbox: OK
-  palette: OK
-  positions: OK
-  shadows
-  sizing: OK
-  spacing: OK
-  typography: OK
-  */
 `;
 
 const Wrapper: React.FC<Props> = ({ children, ...rest }) => {
