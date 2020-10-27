@@ -1,43 +1,43 @@
 import React from 'react';
 import { Meta } from '@storybook/react/types-6-0';
-import { Wrapper } from '../index';
+import Box from '../index';
 
-export const Component: React.FC = () => <Wrapper backgroundColor="red">Storytest</Wrapper>;
+export const Component: React.FC = () => <Box backgroundColor="red">Storytest</Box>;
 export const ComponentWithFlex: React.FC = () => (
-  <Wrapper display="flex" justifyContent="space-between">
-    <Wrapper>hoge</Wrapper>
-    <Wrapper>hoge</Wrapper>
-  </Wrapper>
+  <Box display="flex" justifyContent="space-between">
+    <Box>hoge</Box>
+    <Box>hoge</Box>
+  </Box>
 );
 
 export const ComponentWithSizing: React.FC = () => (
-  <Wrapper display="flex" alignItems="center" justifyContent="space-between" height="300px">
-    <Wrapper>hoge</Wrapper>
-    <Wrapper>hoge</Wrapper>
-  </Wrapper>
+  <Box display="flex" alignItems="center" justifyContent="space-between" height="300px">
+    <Box>hoge</Box>
+    <Box>hoge</Box>
+  </Box>
 );
 
 export const ComponentWithAlign: React.FC = () => (
-  <Wrapper width="100%" textAlign="center">
-    <Wrapper>hoge</Wrapper>
-  </Wrapper>
+  <Box width="100%" textAlign="center">
+    <Box>hoge</Box>
+  </Box>
 );
 
 export const ComponentWithInline: React.FC = () => (
-  <Wrapper width="100%">
-    <Wrapper display="inline" backgroundColor="yellow">
+  <Box width="100%">
+    <Box display="inline" backgroundColor="yellow">
       hoge
-    </Wrapper>
-    <Wrapper display="inline" backgroundColor="red">
+    </Box>
+    <Box display="inline" backgroundColor="red">
       hoge
-    </Wrapper>
-    <Wrapper display="inline" backgroundColor="blue">
+    </Box>
+    <Box display="inline" backgroundColor="blue">
       hoge
-    </Wrapper>
-  </Wrapper>
+    </Box>
+  </Box>
 );
 
-export const ComponentWithBorder: React.FC = () => <Wrapper border="solid 1px black">hoge</Wrapper>;
+export const ComponentWithBorder: React.FC = () => <Box border="solid 1px black">hoge</Box>;
 
 export default {
   title: 'Index',

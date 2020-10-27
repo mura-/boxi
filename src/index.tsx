@@ -37,8 +37,8 @@ const Component = styled.div<ElementProps>`
   ${typography};
 `;
 
-const Wrapper: React.FC<Props> = ({ children, ...rest }) => {
+const Boxi: React.FC<Props> = ({ children, ...rest }) => {
   return <Component {...rest}>{children}</Component>;
 };
 
-export { Wrapper };
+export default Boxi;
