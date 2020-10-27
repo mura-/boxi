@@ -23,6 +23,20 @@ export const ComponentWithAlign: React.FC = () => (
   </Wrapper>
 );
 
+export const ComponentWithInline: React.FC = () => (
+  <Wrapper width="100%">
+    <Wrapper display="inline" backgroundColor="yellow">
+      hoge
+    </Wrapper>
+    <Wrapper display="inline" backgroundColor="red">
+      hoge
+    </Wrapper>
+    <Wrapper display="inline" backgroundColor="blue">
+      hoge
+    </Wrapper>
+  </Wrapper>
+);
+
 export const ComponentWithBorder: React.FC = () => <Wrapper border="solid 1px black">hoge</Wrapper>;
 
 export default {
