@@ -1,4 +1,4 @@
-import React, { CSSProperties } from 'react';
+import React from 'react';
 import styled from '@emotion/styled';
 import { MarginsProps, margins } from './mixins/margins';
 import { PaddingsProps, paddings } from './mixins/paddings';
@@ -7,23 +7,23 @@ import { DisplayProps, display } from './mixins/display';
 import { SizingProps, sizing } from './mixins/sizing';
 import { PositionsProps, positions } from './mixins/positions';
 import { TypographyProps, typography } from './mixins/typography';
+import { PaletteProps, palette } from './mixins/palette';
 
-type ElementProps = {
-  backgroundColor?: CSSProperties['backgroundColor'];
-} & MarginsProps &
+type ElementProps = MarginsProps &
   PaddingsProps &
   FlexboxProps &
   DisplayProps &
   SizingProps &
   PositionsProps &
+  PaletteProps &
   TypographyProps;
 
 type Props = ElementProps & React.HTMLAttributes<HTMLElement>;
 
 const Component = styled.div<ElementProps>`
-  background-color: ${({ backgroundColor }) => backgroundColor};
   ${display};
   ${flexbox};
+  ${palette};
   ${positions};
   ${sizing};
   ${margins};
