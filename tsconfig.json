@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "sourceMap": true,
+    "sourceMap": false,
     "module": "commonjs",
     "esModuleInterop": true,
     "resolveJsonModule": true,
@@ -10,10 +10,12 @@
     "lib": [
       "dom",
       "es6"
-    ]
+    ],
+    "outDir": "dist",
+    "declaration": true,
   },
   "include": [
     "src"
   ],
-  "compileOnSave": false
+  "compileOnSave": false,
 }
