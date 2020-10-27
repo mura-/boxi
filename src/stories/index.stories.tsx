@@ -23,6 +23,8 @@ export const ComponentWithAlign: React.FC = () => (
   </Wrapper>
 );
 
+export const ComponentWithBorder: React.FC = () => <Wrapper border="solid 1px black">hoge</Wrapper>;
+
 export default {
   title: 'Index',
 } as Meta;

@@ -8,6 +8,7 @@ import { SizingProps, sizing } from './mixins/sizing';
 import { PositionsProps, positions } from './mixins/positions';
 import { TypographyProps, typography } from './mixins/typography';
 import { PaletteProps, palette } from './mixins/palette';
+import { BordersProps, borders } from './mixins/borders';
 
 type ElementProps = MarginsProps &
   PaddingsProps &
@@ -16,11 +17,13 @@ type ElementProps = MarginsProps &
   SizingProps &
   PositionsProps &
   PaletteProps &
-  TypographyProps;
+  TypographyProps &
+  BordersProps;
 
 type Props = ElementProps & React.HTMLAttributes<HTMLElement>;
 
 const Component = styled.div<ElementProps>`
+  ${borders};
   ${display};
   ${flexbox};
   ${palette};
@@ -32,10 +35,10 @@ const Component = styled.div<ElementProps>`
 
   /* TODO */
   /*
-  borders
+  borders: OK
   display: OK
   flexbox: OK
-  palette
+  palette: OK
   positions: OK
   shadows
   sizing: OK
