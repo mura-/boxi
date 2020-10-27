@@ -6,6 +6,7 @@ import { FlexboxProps, flexbox } from './mixins/flexbox';
 import { DisplayProps, display } from './mixins/display';
 import { SizingProps, sizing } from './mixins/sizing';
 import { PositionsProps, positions } from './mixins/positions';
+import { TypographyProps, typography } from './mixins/typography';
 
 type ElementProps = {
   backgroundColor?: CSSProperties['backgroundColor'];
@@ -14,18 +15,33 @@ type ElementProps = {
   FlexboxProps &
   DisplayProps &
   SizingProps &
-  PositionsProps;
+  PositionsProps &
+  TypographyProps;
 
 type Props = ElementProps & React.HTMLAttributes<HTMLElement>;
 
 const Component = styled.div<ElementProps>`
   background-color: ${({ backgroundColor }) => backgroundColor};
+  ${display};
+  ${flexbox};
+  ${positions};
+  ${sizing};
   ${margins};
   ${paddings};
-  ${flexbox};
-  ${display};
-  ${sizing};
-  ${positions};
+  ${typography};
+
+  /* TODO */
+  /*
+  borders
+  display: OK
+  flexbox: OK
+  palette
+  positions: OK
+  shadows
+  sizing: OK
+  spacing: OK
+  typography: OK
+  */
 `;
 
 const Wrapper: React.FC<Props> = ({ children, ...rest }) => {

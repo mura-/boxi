@@ -17,6 +17,12 @@ export const ComponentWithSizing: React.FC = () => (
   </Wrapper>
 );
 
+export const ComponentWithAlign: React.FC = () => (
+  <Wrapper width="100%" textAlign="center">
+    <Wrapper>hoge</Wrapper>
+  </Wrapper>
+);
+
 export default {
   title: 'Index',
 } as Meta;
