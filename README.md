@@ -2,7 +2,8 @@
 
 <!-- # Short Description -->
 
-Boxi is hogehoge
+Boxi は Div 要素に対してマージンやパディングなどのスタイルを指定できるライブラリです。
+指定できるスタイルは[Material-ui の Box](https://material-ui.com/components/box/)を参考にしています。
 
 <!-- # Badges -->
 
@@ -24,13 +25,18 @@ Boxi is hogehoge
 
 # Installation
 
-```
-yarn add boxi
-```
+- yarn
 
-```
-npm install boxi
-```
+  ```
+  yarn add boxi
+  ```
+
+- npm
+  ```
+  npm install boxi
+  ```
+
+# Usage
 
 # Contributors
 
