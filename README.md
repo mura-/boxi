@@ -38,6 +38,13 @@ Boxi は Div 要素に対してマージンやパディングなどのスタイ�
 
 # Usage
 
+```
+import Box from 'boxi';
+
+// You can define any props as below
+const Component = () => <Box m="4px">Children</Box>
+```
+
 # Contributors
 
 - [mura-](https://github.com/mura-)
