@@ -37,7 +37,7 @@ export const ComponentWithInline: React.FC = () => (
   </Box>
 );
 
-export const ComponentWithBorder: React.FC = () => <Box border="solid 1px black">hoge</Box>;
+export const ComponentWithBorder: React.FC = () => <Box borderTop="1px" borderColor="red">hoge</Box>;
 
 export default {
   title: 'Index',

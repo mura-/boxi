@@ -20,11 +20,11 @@ export const borders = ({
   borderColor,
   borderRadius,
 }: BordersProps): SerializedStyles => css`
-  border: ${border};
-  border-top: ${borderTop};
-  border-right: ${borderRight};
-  border-bottom: ${borderBottom};
-  border-left: ${borderLeft};
+  ${border && `border: ${border} solid`};
+  ${borderTop && `border-top: ${borderTop} solid`};
+  ${borderRight && `border-right: ${borderRight} solid`};
+  ${borderBottom && `border-bottom: ${borderBottom} solid`};
+  ${borderLeft && `border-left: ${borderLeft} solid`};
   border-color: ${borderColor};
   border-radius: ${borderRadius};
 `;

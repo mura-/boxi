@@ -1,11 +1,7 @@
 # Boxi
 
-<!-- # Short Description -->
-
-Boxi は Div 要素に対してマージンやパディングなどのスタイルを指定できるライブラリです。
+Boxi は Div 要素に対してマージンやパディングなどのスタイルを指定できるライブラリです。  
 指定できるスタイルは[Material-ui の Box](https://material-ui.com/components/box/)を参考にしています。
-
-<!-- # Badges -->
 
 [![Github issues](https://img.shields.io/github/issues/mura-/boxi)](https://github.com/mura-/boxi/issues)
 [![Github forks](https://img.shields.io/github/forks/mura-/boxi)](https://github.com/mura-/boxi/network/members)
@@ -38,15 +34,41 @@ Boxi は Div 要素に対してマージンやパディングなどのスタイ�
 
 # Usage
 
-```
+```tsx
 import Box from 'boxi';
 
 // You can define any props as below
-const Component = () => <Box m="4px">Children</Box>
+const Component = () => <Box m="4px">Children</Box>;
 ```
+
+# API
+
+- borders
+
+| Prop         | CSS property  |
+| ------------ | ------------- |
+| border       | border        |
+| borderTop    | border-top    |
+| borderLeft   | border-left   |
+| borderRight  | border-right  |
+| borderBottom | border-bottom |
+| borderColor  | border-color  |
+| borderRadius | border-radius |
+
+```tsx
+<Box border="1px" borderColor="red"></Box>
+<Box borderTop="1px"></Box>
+```
+
+- display
+- flexbox
+- palette
+- positions
+- shadows
+- sizing
+- spacing
+- typography
 
 # Contributors
 
 - [mura-](https://github.com/mura-)
-
-<!-- CREATED_BY_LEADYOU_README_GENERATOR -->
