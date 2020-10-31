@@ -43,6 +43,12 @@ export const ComponentWithBorder: React.FC = () => (
   </Box>
 );
 
+export const ComponentWithDisplayProps: React.FC = () => (
+  <Box backgroundColor="gray" width="120px" whiteSpace="nowrap">
+    White Space Nowrap. White Space Nowrap.
+  </Box>
+);
+
 export default {
   title: 'Index',
 } as Meta;

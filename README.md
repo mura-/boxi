@@ -43,7 +43,7 @@ const Component = () => <Box m="4px">Children</Box>;
 
 # API
 
-- borders
+## borders
 
 | Prop         | CSS property  |
 | ------------ | ------------- |
@@ -60,14 +60,33 @@ const Component = () => <Box m="4px">Children</Box>;
 <Box borderTop="1px"></Box>
 ```
 
-- display
-- flexbox
-- palette
-- positions
-- shadows
-- sizing
-- spacing
-- typography
+## display
+
+| Prop         | CSS property  |
+| ------------ | ------------- |
+| display      | display       |
+| overflow     | overflow      |
+| textOverflow | text-overflow |
+| visiblity    | visiblity     |
+| whiteSpace   | white-space   |
+
+```tsx
+<Box whiteSpace="nowrap"></Box>
+```
+
+## flexbox
+
+## palette
+
+## positions
+
+## shadows
+
+## sizing
+
+## spacing
+
+## typography
 
 # Contributors
 
