@@ -76,6 +76,30 @@ const Component = () => <Box m="4px">Children</Box>;
 
 ## flexbox
 
+| Prop           | CSS property    |
+| -------------- | --------------- |
+| flexBasis      | flex-basis      |
+| flexDirection  | flex-direction  |
+| flexWrap       | flex-wrap       |
+| justifyContent | justify-content |
+| justifyItems   | justify-items   |
+| justifySelf    | justify-self    |
+| alignItems     | align-items     |
+| alignContent   | align-content   |
+| order          | order           |
+| flex           | flex            |
+| flexGrow       | flex-grow       |
+| flexShrink     | flex-shrink     |
+| alignSelf      | align-self      |
+
+```tsx
+<Box display="flex" justifyContent="space-between" alignItems="center">
+  <Box>1</Box>
+  <Box>2</Box>
+  <Box>3</Box>
+</Box>
+```
+
 ## palette
 
 ## positions
