@@ -116,6 +116,19 @@ const Component = () => <Box m="4px">Children</Box>;
 
 ## positions
 
+| Prop     | CSS property |
+| -------- | ------------ |
+| position | position     |
+| zIndex   | z-index      |
+| top      | top          |
+| right    | right        |
+| bottom   | bottom       |
+| left     | left         |
+
+```tsx
+<Box zIndex="1000"></Box>
+```
+
 ## shadows
 
 ## sizing
