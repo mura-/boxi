@@ -102,6 +102,18 @@ const Component = () => <Box m="4px">Children</Box>;
 
 ## palette
 
+| Prop            | CSS property     |
+| --------------- | ---------------- |
+| color           | color            |
+| background      | background       |
+| backgroundColor | background-color |
+
+```tsx
+<Box color="red" backgroundColor="gray">
+  colored box
+</Box>
+```
+
 ## positions
 
 ## shadows
