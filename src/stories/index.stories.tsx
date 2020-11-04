@@ -49,6 +49,12 @@ export const ComponentWithDisplayProps: React.FC = () => (
   </Box>
 );
 
+export const ComponentWithShadow: React.FC = () => (
+  <Box width="100px" height="100px" boxShadow="10px 10px 10px 10px rgba(0,0,0,0.4)">
+    boxShadow
+  </Box>
+);
+
 export default {
   title: 'Index',
 } as Meta;

@@ -131,6 +131,14 @@ const Component = () => <Box m="4px">Children</Box>;
 
 ## shadows
 
+| Prop      | CSS property |
+| --------- | ------------ |
+| boxShadow | boxShadow    |
+
+```tsx
+<Box boxShadow="10px 10px 10px 10px rgba(0,0,0,0.4)"></Box>
+```
+
 ## sizing
 
 ## spacing
