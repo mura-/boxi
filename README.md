@@ -141,6 +141,21 @@ const Component = () => <Box m="4px">Children</Box>;
 
 ## sizing
 
+| Prop      | CSS property |
+| --------- | ------------ |
+| width     | width        |
+| maxWidth  | max-width    |
+| minWidth  | min-width    |
+| height    | height       |
+| maxHeight | max-height   |
+| minHeight | min-height   |
+| boxSizing | box-sizing   |
+
+```tsx
+<Box width="100%"></Box>
+<Box height="100px"></Box>
+```
+
 ## spacing
 
 ## typography
