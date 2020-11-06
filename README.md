@@ -160,6 +160,20 @@ const Component = () => <Box m="4px">Children</Box>;
 
 ## typography
 
+| Prop          | CSS property   |
+| ------------- | -------------- |
+| fontFamily    | font-family    |
+| fontSize      | font-size      |
+| fontStyle     | font-style     |
+| fontWeight    | font-weight    |
+| latterSpacing | letter-spacing |
+| lineHeight    | line-height    |
+| textAlign     | text-align     |
+
+```tsx
+<Box textAlign="center">text</Box>
+```
+
 # Contributors
 
 - [mura-](https://github.com/mura-)
