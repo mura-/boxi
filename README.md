@@ -158,6 +158,35 @@ const Component = () => <Box m="4px">Children</Box>;
 
 ## spacing
 
+| Prop | CSS property                |
+| ---- | --------------------------- |
+| m    | margin                      |
+| mt   | margin-top                  |
+| mr   | margin-right                |
+| mb   | margin-bottom               |
+| ml   | margin-left                 |
+| mx   | margin-left, margin-right   |
+| my   | margin-top, margin-bottom   |
+| p    | padding                     |
+| pt   | padding-top                 |
+| pr   | padding-right               |
+| pb   | padding-bottom              |
+| pl   | padding-left                |
+| px   | padding-left, padding-right |
+| py   | padding-top, padding-bottom |
+
+```tsx
+<Box mt="10px">text</Box>
+<Box px="10px">text</Box>
+```
+
+Some people find the prop shorthand confusing, you can use the full version if you prefer:
+
+```tsx
+<Box marginTop="10px">text</Box>
+<Box paddingX="10px">text</Box>
+```
+
 ## typography
 
 | Prop          | CSS property   |
