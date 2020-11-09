@@ -16,8 +16,8 @@ Boxi は Div 要素に対してマージンやパディングなどのスタイ�
 
 # Advantages
 
-- div に対してマージンやパディング、色、並びなどのプロパティを渡すことができます。inline style よりも書きやすいです。
-- Emotion を用い CSS in JS で記述されているため inline style よりもパフォーマンス上メリットがあるはずです。（未計測）
+- You can pass properties such as margins, padding, colors, and alignment to the Div element. It's easier to write than inline style.
+- Written in CSS in JS using Emotion, it should have a performance advantage over inline style. (Unmeasured)
 
 # Installation
 
