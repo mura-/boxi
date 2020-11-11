@@ -1,7 +1,7 @@
 # Boxi
 
-Boxi は Div 要素に対してマージンやパディングなどのスタイルを指定できるライブラリです。  
-指定できるスタイルは[Material-ui の Box](https://material-ui.com/components/box/)を参考にしています。
+Boxi is a library that allows you to specify styles such as margins and padding for Div elements.  
+The styles that can be specified are based on the [Material-ui Box.](https://material-ui.com/components/box/)
 
 [![Github issues](https://img.shields.io/github/issues/mura-/boxi)](https://github.com/mura-/boxi/issues)
 [![Github forks](https://img.shields.io/github/forks/mura-/boxi)](https://github.com/mura-/boxi/network/members)
