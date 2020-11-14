@@ -20,9 +20,14 @@ type ElementProps = MarginsProps &
   PaletteProps &
   TypographyProps &
   ShadowsProps &
-  BordersProps;
+  BordersProps & {
+    as?: React.ElementType;
+  };
 
-type Props = ElementProps & React.HTMLAttributes<HTMLElement>;
+type Props = ElementProps &
+  React.HTMLAttributes<HTMLElement> & {
+    component?: React.ElementType;
+  };
 
 const Component = styled.div<ElementProps>`
   ${borders};
@@ -37,8 +42,12 @@ const Component = styled.div<ElementProps>`
   ${typography};
 `;
 
-const Boxi: React.FC<Props> = ({ children, ...rest }) => {
-  return <Component {...rest}>{children}</Component>;
+const Boxi: React.FC<Props> = ({ component, children, ...rest }) => {
+  return (
+    <Component {...rest} as={component}>
+      {children}
+    </Component>
+  );
 };
 
 export default Boxi;
