@@ -55,6 +55,12 @@ export const ComponentWithShadow: React.FC = () => (
   </Box>
 );
 
+export const ComponentWithAsProps: React.FC = () => (
+  <Box>
+    <Box component="button">button</Box>
+  </Box>
+);
+
 export default {
   title: 'Index',
 } as Meta;
