@@ -1,6 +1,3 @@
-import { css, SerializedStyles } from '@emotion/core';
-import { CSSProperties } from 'react';
-import { px } from '../helpers';
 // The breakpoint **start** at this value.
 // For instance with the first breakpoint xs: [xs, sm[.
 const values = {
@@ -11,7 +8,7 @@ const values = {
   xl: 1920,
 };
 
-export type BreakpointsValues<CSSProperty extends string> = {
+export type BreakpointsValues<CSSProperty extends string | number> = {
   xs?: CSSProperty;
   sm?: CSSProperty;
   md?: CSSProperty;
@@ -42,16 +39,16 @@ export const createMediaQuery = ({
   `;
 };
 
-export const restyle = <CSSProperty extends string>({
+export const restyle = <CSSProperty extends string | number>({
   name,
   breakpoints,
 }: {
   name: string;
-  breakpoints: BreakpointsValues<CSSProperty> | string;
+  breakpoints: BreakpointsValues<CSSProperty> | string | number;
 }): string => {
-  if (typeof breakpoints === 'string') return `${name}: ${breakpoints}`;
+  if (typeof breakpoints === 'string' || typeof breakpoints === 'number') return `${name}: ${breakpoints}`;
   return defaultBreakpoints.keys
     .filter((k) => !!breakpoints[k])
-    .map((k) => createMediaQuery({ name, key: k, value: breakpoints[k] }))
+    .map((k) => createMediaQuery({ name, key: k, value: breakpoints[k].toString() }))
     .join('\n');
 };
