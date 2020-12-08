@@ -24,17 +24,30 @@ export const ComponentWithAlign: React.FC = () => (
 );
 
 export const ComponentWithInline: React.FC = () => (
-  <Box width="100%">
-    <Box display="inline" backgroundColor="yellow">
-      Children
+  <>
+    <Box width="100%">
+      <Box display="inline" backgroundColor="yellow" color="red">
+        Children
+      </Box>
+      <Box display="inline" backgroundColor="red">
+        Children
+      </Box>
+      <Box display="inline" backgroundColor="blue">
+        Children
+      </Box>
     </Box>
-    <Box display="inline" backgroundColor="red">
-      Children
+    <Box width="100%">
+      <Box display="inline" backgroundColor={{ md: 'coral' }} color="red">
+        Children
+      </Box>
+      <Box display="inline" backgroundColor="red">
+        Children
+      </Box>
+      <Box display="inline" backgroundColor="blue">
+        Children
+      </Box>
     </Box>
-    <Box display="inline" backgroundColor="blue">
-      Children
-    </Box>
-  </Box>
+  </>
 );
 
 export const ComponentWithBorder: React.FC = () => (
@@ -56,6 +69,12 @@ export const ComponentWithShadow: React.FC = () => (
 );
 
 export const ComponentWithAsProps: React.FC = () => (
+  <Box>
+    <Box component="button">button</Box>
+  </Box>
+);
+
+export const ComponentWithBreakpoints: React.FC = () => (
   <Box>
     <Box component="button">button</Box>
   </Box>
